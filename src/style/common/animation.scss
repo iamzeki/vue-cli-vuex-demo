@@ -1,2 +1,25 @@
 // animation style
 
+/* 过渡效果 */
+
+// fade -- use name="fade"
+@mixin fade($val: .3s, $timing: ease-out){
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity $val $timing;
+    }
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
+    }
+}
+@include fade();
+
+
+// blur -- 可以在弹出框使用模糊背景，blur效果可以直接加到body上
+.blur {
+    filter: blur(1px);
+    opacity: 0.4;
+}
+
+//
+
+/* 动画 */

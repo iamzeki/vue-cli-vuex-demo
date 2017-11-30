@@ -1,0 +1,40 @@
+@import "./setting";
+
+// 根据使用习惯，对normalize上进行补充
+//-----------------------------------------------------
+button,
+input,
+select,
+textarea {
+    font-family: $baseFont;
+}
+
+h1,h2,h3,h4,h5,h6,p,figure,form,blockquote {
+    margin: 0;
+}
+
+// ul ol dl
+ul,ol,li,dl,dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none outside none;
+}
+
+// hn
+h1,h2,h3 {
+    font-weight: normal;
+}
+
+// 所有元素为border-box
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}

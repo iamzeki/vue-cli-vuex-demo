@@ -6,6 +6,7 @@ import account from '@/page/account'
 import login from '@/page/account/login'
 import loginOut from '@/page/account/login-out'
 import Map from './map/map'
+import CarAir from './car-air'
 
 Vue.use(Router)
 
@@ -21,6 +22,7 @@ export default new Router({
             name: 'home',
             component: home
         },
-        ...Map
+        ...Map,
+        ...CarAir
     ]
 })
